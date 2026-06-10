@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Dashboard Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 class="main-title">JavaScript API Dashboard</h1>
+  <div class="grid-container">
+    <section class="grid-item" id="dog-api">
+      <h2>🐶 Random Dog</h2>
+      <button onclick="getDogImage()">Get Dog</button>
+      <div class="output" id="dog-output"></div>
+    </section>
+
+    <section class="grid-item" id="cat-api">
+      <h2>🐱 Random Cat</h2>
+      <button onclick="getCatImage()">Get Cat</button>
+      <div class="output" id="cat-output"></div>
+    </section>
+
+    <section class="grid-item" id="weather-api">
+      <h2>☀️ Weather Info</h2>
+      <button onclick="getWeather()">Get Weather - London UK</button>
+      <div class="output" id="weather-output"></div>
+    </section>
+
+    <section class="grid-item" id="currency-api">
+      <h2>💱 Currency Rates</h2>
+      <label for="usd-amount">USD amount:</label>
+      <input id="usd-amount" type="number" min="0" step="any" value="1" />
+      <button onclick="getExchangeRates()">Convert USD to EUR</button>
+      <div class="output" id="currency-output"></div>
+    </section>
+
+    <!-- Had to add additional coding to be able to enter the amount of USD as well as limit the input -->
+
+    <section class="grid-item" id="movies-api">
+      <h2>🎮 Trending Movies</h2>
+      <button onclick="getMovies()">Get Movies</button>
+      <div class="output" id="movies-output"></div>
+    </section>
+
+    <section class="grid-item" id="github-api">
+      <h2>🧑‍💻 GitHub User</h2>
+      <label for="github-username">GitHub Username:</label>
+      <input id="github-username" type="text" placeholder="e.g. azthomaz"/>
+      <button onclick="getGitHubUser()">Get User</button>
+      <div class="output" id="github-output"></div>
+    </section>
+
+    <!-- Had to add additional coding to be able to enter the github username -->
+
+    <section class="grid-item" id="joke-api">
+      <h2>🤣 Random Joke</h2>
+      <button onclick="getJoke()">Get Joke</button>
+      <div class="output" id="joke-output"></div>
+    </section>
+
+    <section class="grid-item" id="museum-api">
+      <h2>🏛️ Museum Painting</h2>
+      <button onclick="getMuseumObject()">Get Painting</button>
+      <div class="output" id="museum-output"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
